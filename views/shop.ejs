@@ -1,0 +1,18 @@
+<!--BOOKS-SHOP/views/shop.ejs-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <h1>Shop</h1>
+    <ul>
+        <% books.forEach(function(book) { %>
+            <li><%= book.title %> by <%= book.author %> - $<%= book.price %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
